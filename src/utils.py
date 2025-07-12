@@ -45,8 +45,8 @@ def evaluate_model(X_train,y_train,X_test,y_test,models):
 
 def load_object(file_path):
     try:
-        with open(file_path,'rb') as file_obj:
+        with open(file_path,'rb') as file_obj:  ## 'rb' mode is used to read binary data
             return pickle.load(file_obj)
     except Exception as e:
-        logging.info('Exception Occured in load_object function utils')
+        logging.info('Exception occured in load_object function utils')
         raise CustomException(e,sys)
