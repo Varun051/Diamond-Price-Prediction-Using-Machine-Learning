@@ -1,7 +1,4 @@
 pandas
 numpy
-Flask
 seaborn
-scikit-learn
-
 -e .
